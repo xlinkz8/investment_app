@@ -14,7 +14,7 @@ def investment():
     print(investor_name , "Welcome to cohort4 Investment App")
     investor_wallet = int(input("Amount to invest:N"))
     interest = investor_wallet * profit_percentage / 100
-wallet_balance = investor_wallet + interest 
+    wallet_balance = investor_wallet + interest 
     print("Dear Investor" , investor_name , "Your Wallet has been credited with the sum of:N" , wallet_balance, "50% interest on your capital")
     withdrawal_amount = int(input("Enter Your withdrawal Amount:N"))
     if withdrawal_amount >= wallet_balance:
@@ -22,7 +22,7 @@ wallet_balance = investor_wallet + interest
     else:
         final_wallet_balance = wallet_balance - withdrawal_amount
         final_balance = final_wallet_balance * vat_percentage/100
-final_balance = final_wallet_balance - vat_reduction
+        final_balance = final_wallet_balance - vat_reduction
         print(investor_name ,"Your withdrawal was successful and your account has been debited with:N", withdrawal_amount, "and a 7% service charge has been deducted and" ,"your final balance is:" ,'N',final_balance)
 
 investment()
