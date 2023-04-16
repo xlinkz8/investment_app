@@ -21,7 +21,7 @@ def investment():
         print(investor_name,"You have an insufficient Funds to perform this transaction")
     else:
         final_wallet_balance = wallet_balance - withdrawal_amount
-        final_balance = final_wallet_balance * vat_percentage/100
+        vat_reduction = final_wallet_balance * vat_percentage/100
         final_balance = final_wallet_balance - vat_reduction
         print(investor_name ,"Your withdrawal was successful and your account has been debited with:N", withdrawal_amount, "and a 7% service charge has been deducted and" ,"your final balance is:" ,'N',final_balance)
 
